@@ -1,0 +1,64 @@
+/* Start of CSS sheet */
+
+body,
+html {
+    background-color: whitesmoke;
+    margin: .8% 2%;
+}
+
+h1 {
+    border: rebeccapurple solid .08em;
+    border-radius: 10px;
+    padding: .4em 0;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font: 2rem 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(233, 225, 215, 0.4);
+}
+
+nav li {
+    border-radius: 10px;
+    padding: .3em;
+    width: 10%;
+    text-align: center;
+    list-style-type: none;
+    background-color: greenyellow;
+    border: .15rem solid rgba(124, 124, 124, .6);
+    margin-bottom: .15em;
+}
+
+nav li a {
+    color: rgba(12, 4, 114, .8);
+    text-decoration: inherit;
+    font-family: 'Trebuchet MS';
+    font-weight: 600;
+}
+
+nav li:hover {
+    background-color: lightblue;
+}
+
+figure {
+    border: rebeccapurple solid .2em;
+    border-radius: 10px;
+    padding: .6em 0;
+    width: 10%;
+    text-align: center;
+    margin: 2rem 5em;
+    font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+figure img {
+    margin-bottom: 6px;
+}
+
+img {
+    max-width: 90%;
+    border-radius: .3em;
+}
+
+iframe {
+    border-radius: 10px;
+    border: .2em solid rgba(226, 147, 43, .6);
+}

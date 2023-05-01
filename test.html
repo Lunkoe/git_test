@@ -3,37 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Favorite Recipes - Module 1</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 98%;
+            width: 98%;
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 2fr 20fr 2fr;
+            grid-gap: .8rem;
+            grid-template-areas: "item1 item1 item1"
+                "item2 item3 item4"
+                "item5 item5 item5";
+        }
+
+        body {
+            background-color: #3b404e;
+            height: calc(100vh - 16px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            background-color: #1EAAFC;
+            color: black;
+            font-size: xx-large;
+            font-family: 'Trebuchet MS', sans-serif;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            border-radius: 4px;
+            border: 6px solid #171717;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item1 {
+            grid-area: item1;
+            background-color: red;
+        }
+
+        .item5 {
+            grid-area: item5;
+            background-color: yellow;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>My Favorite Recipes</h1>
-    <ul>
-        <li>Yummy Yicken</li>
-    </ul>
-
-    <h2>Yummy Yicken</h2>
-    <p>So named because the first time I ate it, I could not pronounce the "ch" in "chicken". This meal is hearty and
-        comforting, and sure to give you a heart attack.</p>
-
-    <h3>Ingredients</h3>
-    <ul>
-        <li>Bear Creek Dry Broccoli Cheddar Soup</li>
-        <li>8 cups Low fat milk</li>
-        <li>1 pound of cheddar cheese, grated</li>
-    </ul>
-
-    <h3>Steps</h3>
-    <ol>
-        <li>Sear chicken in butter and remove from pan</li>
-        <li>Pour milk into pan with chicken drippings. Add soup mix.</li>
-        <li>Simmer until thickened. Add half of the cheese, let it melt before stirring. Season with salt and pepper to
-            taste</li>
-        <li>Put the chicken back in, pour more cheese on top. Cook for 10-15min or until the chicken is cooked through
-            and the sauce is thick and creamy</li>
-        <li>Serve over rice. Top with additional cheese if desired</li>
-        <li>Enjoy!</li>
-    </ol>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
 </body>
 
 </html>
